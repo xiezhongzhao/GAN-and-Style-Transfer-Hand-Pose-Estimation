@@ -57,7 +57,7 @@ The loss function for style is quite similar to out content loss, except that we
 
 **Total variation loss:** Furthermore, we condiser encouraging spatial smoothness in generated phantom by incorporating the following total variation loss($\hat{x}$ stands for generated phantom, $\hat{x} \in R^{W \times H}$):
 
-​              $l_{tv}(G_{\theta})= \sum_\limits{w,h}(||\hat{x}_{w,h+1}-\hat{x}_{w,h}||^2_2)+||\hat{x}_{w+1,h}-\hat{x}_{w,h}||^2_2$
+  $l_{tv}(G_{\theta})= \sum_\limits{w,h}(||\hat{x}_{w,h+1}-\hat{x}_{w,h}||^2_2)+||\hat{x}_{w+1,h}-\hat{x}_{w,h}||^2_2$
 
 with $w,h \in W,H$, and $\hat{x}_{w,h}$ denotes the pixel value of  given location in phantom image $\hat{x}$.
 
