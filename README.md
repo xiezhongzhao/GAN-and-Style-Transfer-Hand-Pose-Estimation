@@ -20,8 +20,7 @@ Environment:
 
 Suppose the generator $G_{\theta}$, and the discriminator function $D_{r}$, we fellow the GANs optimization problem:
 
-​                $\min \max L({{G}_{\theta }},{{D}_{r}})={{E}_{x,y\text{ }\!\!\tilde{\ }\!\!\text{ p(x,y)}}}[\log {{D}_{r}}(x,y)]+{{E}_{y\tilde{\ }p(y)}}[\log (1-{{D}_{r}}({{G}_{\theta }}(y)))] + \lambda L_{G}(G_{\theta})$
-
+​![](https://latex.codecogs.com/gif.latex?%24%5Cmin%20%5Cmax%20L%28%7B%7BG%7D_%7B%5Ctheta%20%7D%7D%2C%7B%7BD%7D_%7Br%7D%7D%29%3D%7B%7BE%7D_%7Bx%2Cy%5Ctext%7B%20%7D%5C%21%5C%21%5Ctilde%7B%5C%20%7D%5C%21%5C%21%5Ctext%7B%20p%28x%2Cy%29%7D%7D%7D%5B%5Clog%20%7B%7BD%7D_%7Br%7D%7D%28x%2Cy%29%5D&plus;%7B%7BE%7D_%7By%5Ctilde%7B%5C%20%7Dp%28y%29%7D%7D%5B%5Clog%20%281-%7B%7BD%7D_%7Br%7D%7D%28%7B%7BG%7D_%7B%5Ctheta%20%7D%7D%28y%29%29%29%5D%20&plus;%20%5Clambda%20L_%7BG%7D%28G_%7B%5Ctheta%7D%29%24)
 
 
 with $\lambda$ is emperically set to 1, the last term is introduced to ensure the synthetic image will not deviate far from the real image, and we consider the following formulation:
