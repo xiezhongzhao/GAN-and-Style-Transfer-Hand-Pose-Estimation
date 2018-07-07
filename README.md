@@ -20,7 +20,9 @@ Environment:
 
 Suppose the generator $G_{\theta}$, and the discriminator function $D_{r}$, we fellow the GANs optimization problem:
 
-​               $\min \max L({{G}_{\theta }},{{D}_{r}})={{E}_{x,y\text{ }\tilde{\ }\text{ p(x,y)}}}[\log {{D}_{r}}(x,y)]+{{E}_{y\tilde{\ }p(y)}}[\log (1-{{D}_{r}}({{G}_{\theta }}(y)))] + \lambda L_{G}(G_{\theta})$
+​                $\min \max L({{G}_{\theta }},{{D}_{r}})={{E}_{x,y\text{ }\!\!\tilde{\ }\!\!\text{ p(x,y)}}}[\log {{D}_{r}}(x,y)]+{{E}_{y\tilde{\ }p(y)}}[\log (1-{{D}_{r}}({{G}_{\theta }}(y)))] + \lambda L_{G}(G_{\theta})$
+
+
 
 with $\lambda$ is emperically set to 1, the last term is introduced to ensure the synthetic image will not deviate far from the real image, and we consider the following formulation:
 
