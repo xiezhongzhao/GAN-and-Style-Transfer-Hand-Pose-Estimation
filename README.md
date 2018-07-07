@@ -1,6 +1,3 @@
-## Generate depth hand images from hand poses with GAN and style transfer
-___
-
 Environment:
 
 - Ubuntu 16.04 LTS
