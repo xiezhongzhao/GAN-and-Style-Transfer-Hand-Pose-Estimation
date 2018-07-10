@@ -76,7 +76,7 @@ the objective function of discriminator $D$ remains unchanged, the style transfe
 | ![](http://ww1.sinaimg.cn/large/b4c0024fgy1ft13clcrzmj20hs0dcmxe.jpg) | ![](http://ww1.sinaimg.cn/large/b4c0024fgy1ft13sksy1lj203k03kgle.jpg) | ![](http://ww1.sinaimg.cn/large/b4c0024fgy1ft13c67thgj20hs0dcjs9.jpg) |
 
 
-
+![](results/loss_curve.png)
 
 
 
