@@ -12,7 +12,7 @@ Environment:
 
 ​	In Order to generate the depth hand images as similar as raw depth hand images possible, we propose to combined GAN and style-transfer to obtain the synthesized images.  The structure can be divided into three parts, including the generator, discriminator, and style transfer network. The generator generates synthesized hand images with hand poses, and then we follow the GANs idea for this two-player zero-sum game setting and consider the optimization problem that characterizes the interplay between G and D, the last style-transfer part aims to transform the smooth synthetic images generated into the more similar depth hand images to real ones.
 
-![](http://ww1.sinaimg.cn/large/b4c0024fgy1fsxrhkd0s3j21y51ao40b.jpg)
+![](./data/mainframe.jpg)
 
 ### 2. Generator G and Discriminator D
 
