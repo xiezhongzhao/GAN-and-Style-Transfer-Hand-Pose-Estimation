@@ -18,7 +18,7 @@ Environment:
 
 Suppose the generator $G_{\theta}$, and the discriminator function $D_{r}$, we fellow the GANs optimization problem:
 
-$\text{min}_{\theta} \space  \text{max}_r = E_{x,y\sim p(x,y)}[\text{log}D_r(x,y)]+E_{y\sim p(y) }[\text{log}(1-D_r(G_{\theta}(y)))]$
+ $\text{min}_{\theta} \space  \text{max}_r = E_{x,y\sim p(x,y)}[\text{log}D_r(x,y)]+E_{y\sim p(y) }[\text{log}(1-D_r(G_{\theta}(y)))]$
 
 
 with $\lambda$ is emperically set to 1, the last term is introduced to ensure the synthetic image will not deviate far from the real image, and we consider the following formulation:
@@ -53,7 +53,7 @@ The loss function for style is quite similar to out content loss, except that we
 
 ​             $l_{sty}(G_{\theta})=\frac{1}{2}\sum_\limits{l=0}(G^l_{i,j}-A^l_{i,j})^2$
 
-**Total variation loss:** Furthermore, we condiser encouraging spatial smoothness in generated phantom by incorporating the following total variation loss($\hat{x}$ stands for generated phantom, $\hat{x} \in R^{W \times H}$):
+**Total variation loss:** Furthermore, we condiser encouraging spatial smoothness in generated phantom by incorporating the following total variation loss($\hat{x}$ stands for generated phantom, $\hat{x} \in R^{W \times H}$):      
 $l_{t v}\left(G_\theta\right)=\sum\left(\left\|\hat{x}_{w, h+1}-\hat{x}_{w, h}\right\|_2^2\right)+\left\|\hat{x}_{w+1, h}-\hat{x}_{w, h}\right\|_2^2$
 
 with $w,h \in W,H$, and $\hat{x}_{w,h}$ denotes the pixel value of  given location in phantom image $\hat{x}$.
@@ -67,8 +67,6 @@ the objective function of discriminator $D$ remains unchanged, the style transfe
 ### 4. Experimental Details
 
 ​	We can obtain the synthetic images, far similar to raw images, with GAN network and style transfer structure. We've tried GAN network, without style transfer structure, to gain the synthesized image which is smoother than the raw image. Due to GAN ignoring the noise of real depth images, style transfer is employed to extract the contours of the synthetic image and the textures of style image, and then to mix the content and style features to obtain the phantom based on a particular style representation provided by the single style image. Besides, it can be  emprically obeserved that style structure eliminates the shadow of image background. 
-
-
 
 |                             Raw                              | Style                                                        |                      GAN+Style Transfer                      |
 | :----------------------------------------------------------: | ------------------------------------------------------------ | :----------------------------------------------------------: |
